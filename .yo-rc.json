@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Andrew Ribeiro",
+      "authorEmail": "andrewnetwork@gmail.com",
+      "authorUrl": "https://andrewnetwork.github.io/"
+    }
+  }
+}

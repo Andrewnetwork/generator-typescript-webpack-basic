@@ -1,8 +1,8 @@
 {
-  "name": "generator-webpack-basic-generator",
-  "version": "0.0.0",
-  "description": "webpack-basic-generator",
-  "homepage": "https://github.com/Andrewnetwork/webpack-basic-generator",
+  "name": "generator-typescript-webpack-basic",
+  "version": "0.0.1",
+  "description": "generator-typescript-webpack-basic",
+  "homepage": "https://github.com/Andrewnetwork/generator-typescript-webpack-basic",
   "author": {
     "name": "Andrew Ribeiro",
     "email": "andrewnetwork@gmail.com",
@@ -34,8 +34,9 @@
     "npm": ">= 4.0.0"
   },
   "dependencies": {
-    "yeoman-generator": "^2.0.1",
     "chalk": "^2.1.0",
+    "webpack": "^4.37.0",
+    "yeoman-generator": "^2.0.1",
     "yosay": "^2.0.1"
   },
   "jest": {
@@ -71,6 +72,6 @@
     "pretest": "eslint .",
     "test": "jest"
   },
-  "repository": "https://github.com/Andrewnetwork/webpack-basic-generator.git",
+  "repository": "https://github.com/Andrewnetwork/generator-typescript-webpack-basic.git",
   "license": "MIT"
 }

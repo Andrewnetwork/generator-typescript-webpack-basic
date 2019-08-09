@@ -3,7 +3,7 @@ const path = require('path');
 const assert = require('yeoman-assert');
 const helpers = require('yeoman-test');
 
-describe('generator-webpack-basic-generator:app', () => {
+describe('generator-typescript-webpack-basic:app', () => {
   beforeAll(() => {
     return helpers
       .run(path.join(__dirname, '../generators/app'))

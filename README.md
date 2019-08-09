@@ -1,36 +1,47 @@
-# generator-webpack-basic-generator [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> webpack-basic-generator
+# generator-typescript-webpack-basic [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+> generator-typescript-webpack-basic
+## Description
+This is a basic generator for simple TypeScript projects. ```Warning: current version is not acceptable for widespread use.```
 
 ## Installation
 
-First, install [Yeoman](http://yeoman.io) and generator-webpack-basic-generator using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+First, install [Yeoman](http://yeoman.io) and generator-typescript-webpack-basic using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
 ```bash
 npm install -g yo
-npm install -g generator-webpack-basic-generator
+npm install -g generator-typescript-webpack-basic
 ```
 
 Then generate your new project:
 
 ```bash
-yo webpack-basic-generator
+yo generator-typescript-webpack-basic
 ```
 
-## Getting To Know Yeoman
+## Commands
 
- * Yeoman has a heart of gold.
- * Yeoman is a person with feelings and opinions, but is very easy to work with.
- * Yeoman can be too opinionated at times but is easily convinced not to be.
- * Feel free to [learn more about Yeoman](http://yeoman.io/).
+This configuration exposes two command line operations.
+
+While you are developing, open a console and run: 
+```bash
+npm run start
+```
+This launches the webpack dev server which watches your TypeScript files 
+and refreshes the webpage when you make changes.
+
+When you would like to produce the static files for serving, open a console and run: 
+```bash
+npm run build
+```
+This bundles the code and places it in the ```dist``` folder. 
 
 ## License
 
 MIT © [Andrew Ribeiro](https://andrewnetwork.github.io/)
 
-
-[npm-image]: https://badge.fury.io/js/generator-webpack-basic-generator.svg
-[npm-url]: https://npmjs.org/package/generator-webpack-basic-generator
-[travis-image]: https://travis-ci.com/Andrewnetwork/generator-webpack-basic-generator.svg?branch=master
-[travis-url]: https://travis-ci.com/Andrewnetwork/generator-webpack-basic-generator
-[daviddm-image]: https://david-dm.org/Andrewnetwork/generator-webpack-basic-generator.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/Andrewnetwork/generator-webpack-basic-generator
+[npm-image]: https://badge.fury.io/js/generator-typescript-webpack-basic.svg
+[npm-url]: https://npmjs.org/package/generator-typescript-webpack-basic
+[travis-image]: https://travis-ci.com/Andrewnetwork/generator-typescript-webpack-basic.svg?branch=master
+[travis-url]: https://travis-ci.com/Andrewnetwork/generator-typescript-webpack-basic
+[daviddm-image]: https://david-dm.org/Andrewnetwork/generator-typescript-webpack-basic.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/Andrewnetwork/generator-typescript-webpack-basic

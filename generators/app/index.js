@@ -1,21 +1,19 @@
 'use strict';
 const Generator = require('yeoman-generator');
 const chalk = require('chalk');
-const yosay = require('yosay');
 
 module.exports = class extends Generator {
   prompting() {
     // Have Yeoman greet the user.
-    this.log(
-      yosay(`Welcome to the divine ${chalk.red('generator-webpack-basic-generator')} generator!`)
-    );
+    this.log(`Welcome to ${chalk.green('typescript-webpack-basic')}!`);
+    this.log(`Setting up your project now.`);
 
     const prompts = [
       {
-        type: 'confirm',
-        name: 'someAnswer',
-        message: 'Would you like to enable this option?',
-        default: true
+        type: 'input',
+        name: 'name',
+        message: 'Project name:',
+        default: "my-typescript-project"
       }
     ];
 
@@ -26,13 +24,27 @@ module.exports = class extends Generator {
   }
 
   writing() {
+    this.fs.copyTpl(
+      this.templatePath('_package.json'),
+      this.destinationPath('package.json'), {
+          name: this.props.name
+      }
+    );
     this.fs.copy(
-      this.templatePath('dummyfile.txt'),
-      this.destinationPath('dummyfile.txt')
+      this.templatePath('config_files'),
+      this.destinationPath('./')
+    );
+    this.fs.copy(
+      this.templatePath('default_dist'),
+      this.destinationPath('dist')
+    );
+    this.fs.copy(
+      this.templatePath('default_src'),
+      this.destinationPath('src')
     );
   }
 
   install() {
-    this.installDependencies();
+    this.installDependencies({bower:false,npm:true});
   }
 };
